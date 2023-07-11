@@ -1,0 +1,13 @@
+class Solution {
+    public int getDecimalValue(ListNode head) {
+        int ans=0;
+        ListNode tem=head;
+        while(tem!=null){
+            ans=ans*2;
+            ans=ans+tem.val;
+            tem=tem.next;
+        }
+        return ans;
+        
+    }
+}
