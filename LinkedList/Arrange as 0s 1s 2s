@@ -1,0 +1,45 @@
+class Solution
+{
+    //Function to sort a linked list of 0s, 1s and 2s.
+    static Node segregate(Node head)
+    {
+        // add your code here
+        int zero=0;
+        int one=0;
+        int two=0;
+        Node tem=head;
+        while(tem!=null){
+            if(tem.data==0)
+            zero++;
+            else if(tem.data==1)
+            one++;
+            else if(tem.data==2)
+            two++;
+            tem=tem.next;
+        }
+        
+        tem=head;
+        while(tem!=null){
+            if(zero>0){
+                tem.data=0;
+                tem=tem.next;
+                zero--;
+            }
+            else if(one>0){
+                tem.data=1;
+                tem=tem.next;
+                one--;
+            }
+            else if(two>0){
+                tem.data=2;
+                tem=tem.next;
+                two--;
+            }
+            
+        }
+        return head;
+        
+    }
+}
+
+
