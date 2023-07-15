@@ -1,0 +1,21 @@
+public class Main{
+    public static int Search(int arr[],int k){
+       for(int i=0;i<arr.length;i++){
+            if(arr[i]==k)
+            return i;
+        }
+        return -1;
+    }
+    
+    
+    
+    public static void main(String[] args){
+        int[] age={30,56,90,67,32,12,89};
+     int k=12;
+        int n=age.length;
+        System.out.println(Search(age,k));
+         
+               
+        }
+        
+    }
