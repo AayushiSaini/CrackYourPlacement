@@ -1,0 +1,11 @@
+class Solution {
+    public boolean canJump(int[] nums) {
+        int n=nums.length;
+        int raechable=0;
+        for(int i=0;i<n;i++){
+            if(raechable<i) return false;
+            raechable=Math.max(raechable,i+nums[i]);
+        }
+       return true; 
+    }
+}
