@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String str="Aayushi Saini";                     //declaration 
+        System.out.print(str.contains("aini"));
+        System.out.println("");
+        System.out.print(str.contains("gik"));
+        
+    }
+}
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String str="Aayushi Saini";
+        String s="KIET";//declaration 
+        System.out.print(str.contains("aini"));
+        System.out.println("");
+        System.out.print(str.contains("gik"));
+         System.out.println("");
+          System.out.print(str.toLowerCase());
+           System.out.println("");
+           System.out.print(str.toUpperCase());
+            System.out.println("");
+             System.out.print(str.concat(s));
+              System.out.println("");
+              str=str+" "+"KIET GROUPS";
+               System.out.println(str);
+        
+    }
+}
