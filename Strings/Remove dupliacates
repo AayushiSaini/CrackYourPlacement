@@ -1,0 +1,9 @@
+ String res = "";
+        for (int i = 0; i < S.length(); i++) {
+            char ch = S.charAt(i);
+            String substring = S.substring(0, i);
+            if (!substring.contains(String.valueOf(ch))) {
+                res += ch;
+            }
+        }
+        return res;
