@@ -1,0 +1,37 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include<bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+int setBit(int n,int s){
+    int ans=0;
+    for(int i=0;i<pow(2,n);i++){
+        int x=i;
+        int count=0;
+        while(x>0){
+            if(x&1)
+        count++;
+        x=x>>1;
+        }
+        if(count==s){
+            ans=ans+i;
+        }
+    }
+    return ans;
+  
+}
+
+int main()
+{
+    int n,s;
+    cin>>n>>s;
+    int c=setBit(n,s);
+cout<<c;
+    
+}
