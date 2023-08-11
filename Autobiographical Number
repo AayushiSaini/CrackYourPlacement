@@ -1,0 +1,25 @@
+import java.util.*;
+import java.util.Scanner;
+public class Main{
+   public static int countDigit(String st){
+       HashSet<Character> set=new HashSet<>();
+       for(char digit:st.toCharArray()){
+           if(Character.isDigit(digit)){
+               set.add(digit);
+           }
+       }
+       return set.size();
+   }
+    
+   public static void main(String[] args){
+       Scanner sc=new Scanner(System.in);
+      String st=sc.nextLine();
+      int c=countDigit(st);
+      System.out.println(c);
+   }
+        
+   
+}
+
+
+#distinct elements in a number
