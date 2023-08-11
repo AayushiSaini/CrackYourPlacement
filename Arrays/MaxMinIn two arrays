@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+       int[] arr={9,16,12,5,15};
+       int[] brr={14,7,22,5,32,77};
+       int k=9;
+       int count=0;
+       int c=0;
+       for(int i=0;i<arr.length;i++){
+           if(arr[i]>k){
+               count++;
+           }
+       }
+       
+       for(int i=0;i<brr.length;i++){
+           if(brr[i]<k){
+               c++;
+           }
+       }
+       
+      System.out.println(Math.max(count,c));
+        
+    }
+}
