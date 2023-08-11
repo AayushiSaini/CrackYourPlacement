@@ -1,0 +1,28 @@
+import java.util.*;
+import java.util.Scanner;
+public class Main{
+    public static int count(int[] arr,int k,int diff){
+        int count=0;
+        for(int i=0;i<arr.length;i++){
+            int d=Math.abs(arr[i]-k);
+           
+            
+            if(d<diff){
+                count++;
+            }
+        }
+        return count;
+    }
+  
+   public static void main(String[] args){
+       Scanner sc=new Scanner(System.in);
+     int[] arr={12,3,14,56,77,13};
+     int k=13;
+     int diff=2;
+     int c=count(arr,k,diff);
+     System.out.println(c);
+     
+   }
+        
+   
+}
