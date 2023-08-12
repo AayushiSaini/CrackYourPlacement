@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.*;
+public class Main{
+    public static String replaceString(String st, char c1,char c2){
+        StringBuilder s=new StringBuilder();
+        for(int i=0;i<st.length();i++){
+            if(st.charAt(i)==c1){
+                s.append(c2);
+            }else if(st.charAt(i)==c2){
+                s.append(c1);
+            }else{
+                s.append(st.charAt(i));
+            }
+        }
+        return s.toString();
+    }
+    
+    
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String st=sc.nextLine();
+        char c1='g';
+        char c2='h';
+    
+        System.out.println(replaceString(st,c1,c2));
+    }
+}
